@@ -27,15 +27,6 @@ MESSAGE( STATUS "Orocos KDL version ${VERSION} (${KDL_VERSION_MAJOR}.${KDL_VERSI
 SET( PROJ_SOURCE_DIR ${orocos_kdl_SOURCE_DIR} )
 SET( PROJ_BINARY_DIR ${orocos_kdl_BINARY_DIR} )
 
-# catkin-specific configuration (optional)
-find_package(catkin QUIET)
-if(catkin_FOUND)
-  catkin_package(
-    SKIP_CMAKE_CONFIG_GENERATION
-    SKIP_PKG_CONFIG_GENERATION
-  )
-endif()
-
 IF(NOT CMAKE_INSTALL_PREFIX)
   SET( CMAKE_INSTALL_PREFIX /usr/local/ CACHE PATH "Installation directory" FORCE)
   MESSAGE( STATUS "Setting installation directory to ${CMAKE_INSTALL_PREFIX}" )
